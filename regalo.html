@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">  
+<html>
+<head>
+    <meta charset="uft-8"> <!--codificacion para la pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Un pequeño regalo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="container">
+    <div id="night">
+        <main class="main-container">
+            <h1 class="title">¡Feliz Navidad¡</h1>
+          </main>
+          <div class="snow-floor"></div>
+          <script src="index.js"></script>
+
+          <!-- Botón con la imagen -->
+        <button class="image-button" id="btn-abrir-modal">
+            <img src="https://github.com/makario3/Regalo-navidad/blob/main/Arbol.png?raw=true" alt="Árbol de Navidad" />/>
+        </button>
+        
+        <dialog id="modal">
+            <h2>FELIZ NAVIDAD</h2>
+            <p>¡Feliz Navidad, cabrones! 🎄✨ Espero que se la pasen chido con sus familias, aunque ya sé que extrañarán mis bromas y mis quejas. Les deseo muchas risas, buena comida y regalos. Gracias por ser los pendejos que hacen mi vida más divertida y menos pesada, a pesar de sus pendejadas. ¡Nos vemos pronto para celebrar como se debe! 🎉🍻
+            </p>
+               <p>PD:Espero que sigan respirando.</p>
+            <button id="btn-cerrar-modal">Cerrar</button>
+        </dialog>
+    </div>
+    <script>
+        // Referencias a elementos
+        const modal = document.getElementById('modal');
+        const openButton = document.getElementById('btn-abrir-modal');
+        const closeButton = document.getElementById('btn-cerrar-modal');
+
+        // Mostrar el diálogo
+        openButton.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        // Cerrar el diálogo
+        closeButton.addEventListener('click', () => {
+            modal.close();
+        });
+    </script>
+</body>
+</html>
